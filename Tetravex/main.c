@@ -65,7 +65,8 @@ int main() {
 	intercambia_elemento(coord1,coord2,m);
 	print_matrix(N,N,m);
     */
-    
+        printf("Introduzca dimension del juego: ");
+        scanf("%d%*c",&size);
      ttoken board[size][size];
      
     for(i=size-1;i>=0;i--){
@@ -113,8 +114,8 @@ int main() {
     printf("Introduzca posiciones a intercambiar:\n");
 	printf("Ejemplo[A1B2]: ");
 	tcoordinate coord1, coord2;
-	scanf("[%c%d%c%d]%*c",&coord1.y,&coord1.x,&coord2.y,&coord2.x);
-	
+      scanf("[%c%d%c%d]%*c",&coord1.y,&coord1.x,&coord2.y,&coord2.x);
+/*	
 	//Esta condicion tiene que arreglarse en funcion del tamanyo del tablero
 	if ((char) coord1.y>='A' && (char) coord1.y<='Z'||(char) coord2.y>='A' && (char) coord2.y<='Z' ){
 		coord1.y=(char)coord1.y-'A';
@@ -149,6 +150,8 @@ int main() {
     	printf("\n\n");
 
     }
+ 
+  */
     return (EXIT_SUCCESS);
 }
 
